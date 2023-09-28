@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import "./Title.css";
 
@@ -14,10 +14,12 @@ const StyledTitle = styled.h1`
     line-height: normal;
 `;
 
-function Title () {
-    return (
-        <StyledTitle>Lire Livre</StyledTitle>
-    );
+class Title extends Component {
+    render() {
+        return (
+            <StyledTitle>Lire Livre</StyledTitle>
+        );
+    }
 }
 
 export default Title;

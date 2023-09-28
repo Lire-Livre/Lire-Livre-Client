@@ -1,10 +1,13 @@
+import React, { Component } from 'react';
 import './App.css';
 import SocialLoginPage from './page/SocialLoginPage';
 
-function App() {
-  return (
-    <SocialLoginPage></SocialLoginPage>
-  );
+class App extends Component {
+  render() {
+    return (
+      <SocialLoginPage></SocialLoginPage>
+    );
+  }
 }
 
 export default App;

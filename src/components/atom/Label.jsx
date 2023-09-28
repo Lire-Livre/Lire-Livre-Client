@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 
 const StyledLabel = styled.span`
@@ -7,8 +7,12 @@ const StyledLabel = styled.span`
     font-size: 1.2rem;
 `;
 
-function Label(props) {
-    return <StyledLabel>{props.content}</StyledLabel>
+class Label extends Component {
+    render() {
+        return (
+            <StyledLabel>{this.props.content}</StyledLabel>
+        );
+    }
 }
 
 export default Label;
