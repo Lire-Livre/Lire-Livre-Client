@@ -8,7 +8,7 @@ const StyledTitle = styled.h1`
     color: #426B22;
     font-family: 'Lemon';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
