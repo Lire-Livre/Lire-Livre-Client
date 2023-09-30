@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./Hr.css"
+import "../../css/Hr.css";
 
 class Hr extends Component {
     render() {

@@ -5,7 +5,7 @@ const StyledButton = styled.button`
     
 `;
 
-class SocialLoginButton extends Component {
+class Button extends Component {
     render() {
         return (
             <StyledButton></StyledButton>
@@ -13,4 +13,4 @@ class SocialLoginButton extends Component {
     }
 }
 
-export default SocialLoginButton;
+export default Button;

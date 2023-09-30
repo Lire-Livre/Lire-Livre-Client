@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import "./Title.css";
+import "../../css/Title.css";
 
 
 const StyledTitle = styled.h1`
