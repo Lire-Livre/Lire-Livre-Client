@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
-import SocialLoginPage from './page/SocialLoginPage';
+import React from 'react';
+import SocialLoginPage from './page/Login/SocialLoginPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import EmailLoginPage from './page/Login/EmailLoginPage';
 
-class App extends Component {
-  render() {
-    return (
-      <SocialLoginPage></SocialLoginPage>
-    );
-  }
+function App () {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SocialLoginPage />} />
+        <Route path="/login/email" element={<EmailLoginPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

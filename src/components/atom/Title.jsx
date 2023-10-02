@@ -5,6 +5,7 @@ import "../../css/Title.css";
 
 const StyledTitle = styled.h1`
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     color: #426B22;
     font-family: 'Lemon';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

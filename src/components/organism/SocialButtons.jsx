@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../atom/Button";
 
@@ -11,7 +12,9 @@ function SocialButtons() {
         <StyledDiv>
             <Button type="social" platform="naver"></Button>
             <Button type="social" platform="kakao"></Button>
-            <Button type="social" platform="email"></Button>
+            <Link to="/login/email">
+                <Button type="social" platform="email"></Button>
+            </Link>
         </StyledDiv>
     );
 }

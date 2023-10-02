@@ -10,15 +10,13 @@ const StyledDiv = styled.div`
     margin-top: 3rem;
 `;
 
-class LireLivreTitle extends Component {
-    render() {
-        return (
-            <StyledDiv>
-                <Label content={"즐거운 독서모임의 시작"}></Label>
-                <Title></Title>
-            </StyledDiv>
-        );
-    }
+function LireLivreTitle() {
+    return (
+        <StyledDiv>
+            <Label type="title" content={"즐거운 독서모임의 시작"}></Label>
+            <Title></Title>
+        </StyledDiv>
+    );
 }
 
 export default LireLivreTitle;

@@ -1,16 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
-const StyledLabel = styled.span`
+const StyledTitleLabel = styled.label`
     margin-top: 5rem;
     font-weight: 600;
     font-size: 1.2rem;
 `;
 
-class Label extends Component {
-    render() {
+const StyledLabel = styled.a`
+    font-weight: 600;
+`;
+
+function Label(props) {
+    var _type = props.type;
+    var _content = props.content;
+
+    if (_type === 'title') {
         return (
-            <StyledLabel>{this.props.content}</StyledLabel>
+            <StyledTitleLabel>{_content}</StyledTitleLabel>
+        );
+    } else {
+        return (
+            <StyledLabel>{_content}</StyledLabel>
         );
     }
 }
