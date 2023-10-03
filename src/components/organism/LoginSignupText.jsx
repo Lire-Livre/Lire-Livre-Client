@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Label from "../atom/Label";
 
 const StyledDiv = styled.div`
@@ -17,7 +18,9 @@ function LoginSignupText() {
                 <Label content="아이디/비밀번호 찾기"></Label>
             </div>
             <div style={styleSignup}>
-                <Label content="회원가입"></Label>
+                <Link to="/signup" style={{color: "black", textDecoration: "none"}}>
+                    <Label content="회원가입"></Label>
+                </Link>
             </div> 
         </StyledDiv>
     );

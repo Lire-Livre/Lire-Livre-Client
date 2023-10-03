@@ -12,9 +12,7 @@ function LoginInputs() {
     return (
         <StyledDiv>
             <Input type="text" name="ID"></Input>
-            <div>
-                <Input type="password" name="Password"></Input>
-            </div>
+            <Input type="password" name="Password"></Input>
             <Input type="submit" value="Log in"></Input>
         </StyledDiv>
     );
