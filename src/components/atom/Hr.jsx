@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
@@ -19,9 +19,9 @@ const StyledDiv = styled.div`
     }
 `;
 
-function Hr () {
+function Hr (props) {
     return (
-        <StyledDiv>로그인/회원가입</StyledDiv>
+        <StyledDiv>{props.content}</StyledDiv>
     );
 }
 
