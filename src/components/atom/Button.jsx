@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSignupIdButton = styled.button`
-    margin: auto 0;
     margin-left: 1rem;
-    margin-top: 0.4rem;
     height: 2.8rem;
     width: 5rem;
     border-radius: 10px;

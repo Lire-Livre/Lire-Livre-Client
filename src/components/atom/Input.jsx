@@ -16,11 +16,9 @@ const StyledInput = styled.input`
 
 const styleSubmit = {width: '20.4rem', background: '#426B22', color: '#FFF'}; 
 const styleInput = {background: '#EDEDED'};
-const styledSignupIdInput = {width: '13rem', background: '#EDEDED'};
 
 function Input(props) {
     var _placeholder = props.name;
-    var _plcae = props.place;
     var _type = props.type;
     var _value = props.value;
 
@@ -31,19 +29,11 @@ function Input(props) {
             </StyledDiv>
         );
     } else {
-        if (_plcae === 'signupId') {
-            return (
-                <StyledDiv>
-                    <StyledInput style={styledSignupIdInput} type={_type} placeholder={_placeholder}></StyledInput>   
-                </StyledDiv>
-            );
-        } else {
-            return (
-                <StyledDiv>
-                    <StyledInput style={styleInput} type={_type} placeholder={_placeholder}></StyledInput>   
-                </StyledDiv>
-            );
-        }
+        return (
+            <StyledDiv>
+                <StyledInput style={styleInput} type={_type} placeholder={_placeholder}></StyledInput>   
+            </StyledDiv>
+        );
     }
 }
 
